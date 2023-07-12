@@ -13,7 +13,7 @@ const SkillsPage = () => {
       flexDirection: 'column',
       alignItems: 'center',
       width: '80%',
-      height: '70%',
+      height: '90%',
       minHeight: 100,
       maxHeight: 800,
       margin: 'auto',

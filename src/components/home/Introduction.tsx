@@ -74,12 +74,12 @@ const Introduction = () => {
         </p>
         <div css={styles.links}>
           <span>
-            <FaGithub
-              color={theme.primary700}
-              css={styles.icon}
-              fontSize='18'
-            />
             <a css={styles.link} href='https://github.com/lunarW1TCH'>
+              <FaGithub
+                color={theme.primary700}
+                css={styles.icon}
+                fontSize='18'
+              />
               GitHub
             </a>
           </span>
@@ -98,7 +98,7 @@ const Introduction = () => {
           </span>
         </div>
       </div>
-      <p css={styles.catCredit}>Her name&apos;s Freja</p>
+      <p css={styles.catCredit}>The cat name&apos;s Freja</p>
     </div>
   );
 };

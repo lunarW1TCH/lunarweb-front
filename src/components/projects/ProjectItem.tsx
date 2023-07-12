@@ -2,6 +2,7 @@
 import { useTheme } from '@emotion/react';
 import createStyles from '../../styles/createStyles';
 import { ITheme } from '../../styles/globalStyles';
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 export interface ProjectItemProps {
   title: string;
@@ -42,6 +43,7 @@ const ProjectItem = (props: ProjectItemProps) => {
       overflow: 'hidden',
       border: `2px solid ${theme.primary700}`,
       borderRadius: 8,
+      position: 'relative',
     },
     infoContainer: {
       display: 'flex',
@@ -63,6 +65,17 @@ const ProjectItem = (props: ProjectItemProps) => {
     projectTechnologies: {
       marginBottom: 20,
     },
+    icon: {
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      margin: 10,
+      padding: 6,
+      width: 30,
+      height: 30,
+      backgroundColor: 'white',
+      borderRadius: 4,
+    },
   });
 
   return (
@@ -78,6 +91,10 @@ const ProjectItem = (props: ProjectItemProps) => {
         <div css={styles.imgContainer}>
           {link !== '' ? (
             <a href={link}>
+              <FaArrowUpRightFromSquare
+                color={theme.primary900}
+                css={styles.icon}
+              />
               <img alt={title} css={styles.projectImg} src={image} />
             </a>
           ) : (
