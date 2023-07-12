@@ -1,0 +1,134 @@
+[
+  {
+    "title": "JavaScript",
+    "category": "Language",
+    "description": "",
+    "proficiency": 5
+  },
+  {
+    "title": "TypeScript",
+    "category": "Language",
+    "description": "",
+    "proficiency": 4
+  },
+  {
+    "title": "React",
+    "category": "Library/Framework",
+    "description": "",
+    "proficiency": 4
+  },
+  {
+    "title": "React Native",
+    "category": "Library/Framework",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "Redux Toolkit",
+    "category": "Library/Framework",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "Visual Studio Code",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 5
+  },
+  {
+    "title": "Node JS",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 4
+  },
+  {
+    "title": "Express JS",
+    "category": "Library/Framework",
+    "description": "",
+    "proficiency": 4
+  },
+  {
+    "title": "MongoDB",
+    "category": "Tool/Other",
+    "description": "Mostly used it with Node JS and Mongoose",
+    "proficiency": 3
+  },
+  {
+    "title": "Mongoose",
+    "category": "Library/Framework",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "Python",
+    "category": "Language",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "C++",
+    "category": "Language",
+    "description": "Arduino C++ subset",
+    "proficiency": 2
+  },
+  {
+    "title": "Flask",
+    "category": "Library/Framework",
+    "description": "",
+    "proficiency": 2
+  },
+  {
+    "title": "Arduino IDE",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "Arduino",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 2
+  },
+  {
+    "title": "Raspberry Pi",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 2
+  },
+  {
+    "title": "Linux",
+    "category": "Tool/Other",
+    "description": "I use Manjaro as my main operating system.",
+    "proficiency": 3
+  },
+  {
+    "title": "Visual Basic for Applications",
+    "category": "Language",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "MS OFFICE",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "Unreal Engine 5",
+    "category": "Tool/Other",
+    "description": "",
+    "proficiency": 3
+  },
+  {
+    "title": "HTML",
+    "category": "Language",
+    "description": "",
+    "proficiency": 4
+  },
+  {
+    "title": "CSS/SCSS",
+    "category": "Language",
+    "description": "",
+    "proficiency": 4
+  }
+]

@@ -1,25 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Global } from '@emotion/react';
+import globalStyles from './styles/globalStyles';
+import { THEME } from './styles/globalStyles';
+import { ThemeProvider } from '@emotion/react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RootLayout from './pages/Root';
+import ErrorPage from './pages/Error';
+import HomePage from './pages/Home';
+import ProjectsPage from './pages/Projects';
+import SkillsPage from './pages/Skills';
+import ContactPage from './pages/Contact';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '',
+      element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: 'projects', element: <ProjectsPage /> },
+        { path: 'skills', element: <SkillsPage /> },
+        { path: 'contact', element: <ContactPage /> },
+      ],
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={THEME}>
+        <Global styles={globalStyles} />
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </>
   );
 }
 

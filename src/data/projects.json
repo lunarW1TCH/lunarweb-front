@@ -1,0 +1,89 @@
+[
+  {
+    "title": "This website - lunarweb.dev",
+    "description": "TODO/ I created this website to describe my experience as a developer in more detail than to what I can fit in my resume. (That's Galadriela)",
+    "technologies": ["TypeScript", "React", "Emotion - CSS-in-JS library"],
+    "image": "/img/gala.jpg",
+    "link": ""
+  },
+  {
+    "title": "Lunarify - React",
+    "description": "This is a React app which utilizes Spotify API to show user's top listened-to artists and albums.",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Redux Toolkit",
+      "i18next",
+      "REST API",
+      "OAUTH2",
+      "SPOTIFY API"
+    ],
+    "image": "/img/lunarify-react.png",
+    "link": "https://github.com/lunarW1TCH/lunarify-react"
+  },
+  {
+    "title": "Lunarify - React Native",
+    "description": "This is a React Native version of my Lunarify web app for Android and iOS.",
+    "technologies": [
+      "TypeScript",
+      "React Native",
+      "Redux Toolkit",
+      "i18next",
+      "REST API",
+      "OAUTH2",
+      "SPOTIFY API"
+    ],
+    "image": "/img/lunarify-react-native.jpg",
+    "link": "https://github.com/lunarW1TCH/lunarify-react-native"
+  },
+  {
+    "title": "Lunarstars",
+    "description": "This is a simple website which generates random pixel art images of stars and planets which you can use for your TTRPG campaign or anything else you want.",
+    "technologies": ["TypeScript", "React", "SCSS", "i18next"],
+    "image": "/img/lunarstars.png",
+    "link": "https://github.com/lunarW1TCH/lunarpics"
+  },
+  {
+    "title": "WIP: Minos",
+    "description": "ANV Production's project in which I am responsible for coding for Arduino and Raspberry Pi devices using C++ and Python. We are developing hardware and software for an IRL game based on Twine.",
+    "technologies": [
+      "Arduino",
+      "Arduino IDE",
+      "Raspberry Pi",
+      "C++",
+      "Python",
+      "Selenium"
+    ],
+    "image": "/img/minos.png",
+    "link": ""
+  },
+  {
+    "title": "AMO",
+    "description": "An Unreal Engine 5 project I worked on as a developer while working at Nyx VX. Click on the title or picture to go to steam page.",
+    "technologies": ["Unreal Engine 5"],
+    "image": "/img/amo.png",
+    "link": "https://store.steampowered.com/app/2230720/A_Mountain_of_One/"
+  },
+  {
+    "title": "WIP: Time Finder",
+    "description": "DiscordJS bot which allows you to create polls to choose the best time for you and your discord server friends. React frontend, NodeJS backend, MongoDB and DiscordJS.",
+    "technologies": [
+      "TypeScript",
+      "NodeJS",
+      "React",
+      "MongoDB",
+      "Mongoose",
+      "DiscordJS",
+      "REST API"
+    ],
+    "image": "/img/timefinder.png",
+    "link": ""
+  },
+  {
+    "title": "Lunarroller",
+    "description": "This is the first website I ever made. It is written in Html, CSS and Javascript only.",
+    "technologies": ["HTML", "CSS", "Vanilla JS"],
+    "image": "/img/lunarroller.png",
+    "link": "https://github.com/lunarW1TCH/DiceRoller_Dev"
+  }
+]
