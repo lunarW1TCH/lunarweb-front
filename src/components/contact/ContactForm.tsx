@@ -32,9 +32,12 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/mail', {
-        ...formData,
-      });
+      const response = await axios.post(
+        'https://lunarweb-node.vercel.app/mail',
+        {
+          ...formData,
+        }
+      );
       setSent(true);
     } catch (error) {
       setSendingError(true);
