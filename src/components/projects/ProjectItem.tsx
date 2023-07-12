@@ -78,10 +78,10 @@ const ProjectItem = (props: ProjectItemProps) => {
         <div css={styles.imgContainer}>
           {link !== '' ? (
             <a href={link}>
-              <img css={styles.projectImg} src={image} />
+              <img alt={title} css={styles.projectImg} src={image} />
             </a>
           ) : (
-            <img css={styles.projectImg} src={image} />
+            <img alt={title} css={styles.projectImg} src={image} />
           )}
         </div>
       </div>
