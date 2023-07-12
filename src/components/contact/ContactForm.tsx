@@ -36,6 +36,11 @@ const ContactForm = () => {
         'https://lunarweb-node.onrender.com/mail',
         {
           ...formData,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
         }
       );
       setSent(true);
