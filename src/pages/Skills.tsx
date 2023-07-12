@@ -3,6 +3,7 @@ import createStyles from '../styles/createStyles';
 
 import skills from '../data/skills.json';
 import SkillItem, { SkillItemProps } from '../components/skills/SkillItem';
+import { mq } from '../styles/globalStyles';
 
 const SkillsPage = () => {
   const skillsArray = skills as SkillItemProps[];
@@ -23,6 +24,9 @@ const SkillsPage = () => {
       backgroundColor: 'white',
       borderRadius: 8,
       overflowY: 'auto',
+      [mq[1]]: {
+        width: '90%',
+      },
     },
   });
 

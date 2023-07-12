@@ -5,7 +5,7 @@ import validator from 'validator';
 import axios from 'axios';
 
 import createStyles from '../../styles/createStyles';
-import { ITheme } from '../../styles/globalStyles';
+import { ITheme, mq } from '../../styles/globalStyles';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -92,6 +92,9 @@ const ContactForm = () => {
       borderRadius: 8,
       backgroundColor: 'white',
       color: theme.primary900,
+      [mq[1]]: {
+        width: '100%',
+      },
     },
     formInput: {
       marginBottom: 8,
