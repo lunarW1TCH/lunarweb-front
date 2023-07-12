@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        'https://lunarweb-node.vercel.app/mail',
+        'https://lunarweb-node.onrender.com/mail',
         {
           ...formData,
         }
