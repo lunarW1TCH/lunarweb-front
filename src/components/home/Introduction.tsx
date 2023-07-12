@@ -18,9 +18,13 @@ const Introduction = () => {
     innerContainer: {
       backgroundColor: 'white',
       width: 500,
+
       padding: 30,
       borderRadius: 8,
       color: 'black',
+      [mq[1]]: {
+        width: '90%',
+      },
     },
     header: {
       padding: 40,
