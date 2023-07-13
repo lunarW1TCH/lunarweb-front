@@ -1,8 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { useState } from 'react';
-import { useTheme } from '@emotion/react';
+import { keyframes, useTheme } from '@emotion/react';
 import validator from 'validator';
 import axios from 'axios';
+import { FaSpinner } from 'react-icons/fa';
 
 import createStyles from '../../styles/createStyles';
 import { ITheme, mq } from '../../styles/globalStyles';
@@ -18,6 +19,7 @@ const ContactForm = () => {
     title: false,
     message: false,
   });
+  const [isLoading, setIsLoading] = useState(false);
   const [sent, setSent] = useState(false);
   const [sendingError, setSendingError] = useState(false);
 
@@ -30,6 +32,8 @@ const ContactForm = () => {
       setSendingError(true);
       return;
     }
+
+    setIsLoading(true);
 
     try {
       const response = await axios.post(
@@ -44,8 +48,10 @@ const ContactForm = () => {
         }
       );
       setSent(true);
+      setIsLoading(false);
     } catch (error) {
       setSendingError(true);
+      setIsLoading(false);
     }
   };
 
@@ -88,6 +94,15 @@ const ContactForm = () => {
 
   const theme = useTheme() as ITheme;
 
+  const animation = keyframes({
+    '0%': {
+      transform: 'rotate(0deg)',
+    },
+    '100%': {
+      transform: 'rotate(360deg)',
+    },
+  });
+
   const styles = createStyles({
     formContainer: {
       display: 'flex',
@@ -126,6 +141,10 @@ const ContactForm = () => {
       marginTop: 10,
       color: 'red',
       textAlign: 'center',
+    },
+    spinner: {
+      animation: `${animation} 1s infinite linear`,
+      margin: 'auto',
     },
   });
 
@@ -166,6 +185,7 @@ const ContactForm = () => {
             value={formData.message}
             required
           />
+          {isLoading && <FaSpinner css={styles.spinner} />}
           <button css={styles.submitButton} type='submit'>
             Submit!
           </button>

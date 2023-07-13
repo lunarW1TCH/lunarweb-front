@@ -1,10 +1,16 @@
 [
   {
-    "title": "This website - lunarweb.dev",
-    "description": "TODO/ I created this website to describe my experience as a developer in more detail than to what I can fit in my resume. (That's Galadriela)",
-    "technologies": ["TypeScript", "React", "Emotion - CSS-in-JS library"],
+    "title": "This website",
+    "description": "You're here, portfolio website with simple Express backend for sending e-mails through contact form. (That's Galadriela)",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Emotion - CSS-in-JS library",
+      "NodeJS",
+      "ExpressJS"
+    ],
     "image": "/img/gala.jpg",
-    "link": ""
+    "link": "https://github.com/lunarW1TCH/lunarweb-front"
   },
   {
     "title": "Lunarify - React",
@@ -59,7 +65,7 @@
   },
   {
     "title": "AMO",
-    "description": "An Unreal Engine 5 project I worked on as a developer while working at Nyx VX. Click on the title or picture to go to steam page.",
+    "description": "An Unreal Engine 5 project I worked on as a developer while working at Nyx VX.",
     "technologies": ["Unreal Engine 5"],
     "image": "/img/amo.png",
     "link": "https://store.steampowered.com/app/2230720/A_Mountain_of_One/"

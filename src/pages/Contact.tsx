@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 
-import ContactForm from '../components/contact/ContactForm';
 import createStyles from '../styles/createStyles';
+import ContactForm from '../components/contact/ContactForm';
+import ContactInfo from '../components/contact/ContactInfo';
 
 const ContactPage = () => {
   const styles = createStyles({
@@ -19,6 +20,7 @@ const ContactPage = () => {
   return (
     <div css={styles.contactContainer}>
       {/* <h1>Contact me by E-mail, LinkedIn DM or fill out the form below</h1> */}
+      <ContactInfo />
       <ContactForm />
     </div>
   );

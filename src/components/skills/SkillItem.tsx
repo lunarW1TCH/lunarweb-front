@@ -10,11 +10,10 @@ export interface SkillItemProps {
   title: string;
   description: string;
   category: string;
-  proficiency: number;
 }
 
 const SkillItem = (props: SkillItemProps) => {
-  const { title, description, category, proficiency } = props;
+  const { title, description, category } = props;
   const theme = useTheme() as ITheme;
 
   let circleColor = '#008080';
@@ -51,16 +50,15 @@ const SkillItem = (props: SkillItemProps) => {
     dataContainer: {
       display: 'flex',
       flexWrap: 'wrap',
-      justifyContent: 'center',
+      justifyContent: 'left',
       alignItems: 'center',
-      width: '80%',
+      width: '66%',
       span: {
         width: '33%',
         textAlign: 'left',
       },
       [mq[1]]: {
         flexDirection: 'column',
-        // width: 'auto',
         float: 'left',
         alignItems: 'flex-start',
         flexGrow: 1,
@@ -70,15 +68,17 @@ const SkillItem = (props: SkillItemProps) => {
         },
       },
     },
-    iconContainer: {
-      whiteSpace: 'nowrap',
-    },
     icon: {
       marginRight: 8,
-      verticalAlign: 'top',
+      verticalAlign: 'text-top',
     },
     skillTitle: {
       fontWeight: 'bolder',
+      marginRight: 8,
+    },
+    skillDescription: {
+      width: '50%',
+      textAlign: 'left',
     },
   });
 
@@ -90,16 +90,8 @@ const SkillItem = (props: SkillItemProps) => {
           <FaCircle css={styles.icon} color={circleColor} size='18' />
           {category}
         </span>
-        <span>{description}</span>
       </div>
-      <div css={styles.iconContainer}>
-        {[...Array(proficiency)].map((e, i) => (
-          <FaStar size='18' key={i} color={theme.primary700} />
-        ))}
-        {[...Array(5 - proficiency)].map((e, i) => (
-          <FaRegStar size='18' key={i} color={theme.primary700} />
-        ))}
-      </div>
+      <span css={styles.skillDescription}>{description}</span>
     </div>
   );
 };
