@@ -19,7 +19,6 @@ const ContactPage = () => {
 
   return (
     <div css={styles.contactContainer}>
-      {/* <h1>Contact me by E-mail, LinkedIn DM or fill out the form below</h1> */}
       <ContactInfo />
       <ContactForm />
     </div>
