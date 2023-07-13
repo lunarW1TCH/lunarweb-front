@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        'https://lunarweb-node.onrender.com/mail',
+        'https://extinct-ring-seal.cyclic.app/mail',
         {
           ...formData,
         },
