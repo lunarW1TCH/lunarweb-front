@@ -13,6 +13,21 @@
     "link": "https://github.com/lunarW1TCH/lunarweb-front"
   },
   {
+    "title": "WIP: Lunar Bingo",
+    "description": "A fullstack TypeScript app! Users can create bingos, share them with others and play together! App is almost complete, I just need to work a little bit more on styling before publishing it.",
+    "technologies": [
+      "TypeScript",
+      "Vue",
+      "SCSS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Mongoose"
+    ],
+    "image": "/img/bingo.png",
+    "link": ""
+  },
+  {
     "title": "Lunarify - React",
     "description": "This is a React app which utilizes Spotify API to show user's top listened-to artists and albums.",
     "technologies": [

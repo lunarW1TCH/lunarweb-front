@@ -12,15 +12,15 @@
   {
     "title": "React",
     "category": "Library/Framework",
-    "description": ""
+    "description": "Redux Toolkit, Styled Components"
+  },
+  {
+    "title": "Vue",
+    "category": "Library/Framework",
+    "description": "Composition API, Options API, Vuex/Pinia"
   },
   {
     "title": "React Native",
-    "category": "Library/Framework",
-    "description": ""
-  },
-  {
-    "title": "Redux Toolkit",
     "category": "Library/Framework",
     "description": ""
   },
@@ -93,6 +93,11 @@
     "title": "MS OFFICE",
     "category": "Tool/Other",
     "description": ""
+  },
+  {
+    "title": "Postman",
+    "category": "Tool/Other",
+    "description": "For testing API development."
   },
   {
     "title": "Unreal Engine 5",
