@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "https://www.lunarweb.dev/"
   status = 200
   force = false
